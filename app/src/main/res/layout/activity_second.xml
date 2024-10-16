@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <LinearLayout
+        android:id="@+id/oneAndTwoOperands"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8pt"
+        android:layout_marginRight="8pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3">
+
+        <EditText
+            android:id="@+id/oneOperandET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="8pt"
+            android:layout_weight="1"
+            tools:ignore="Autofill,LabelFor,TextFields" />
+
+        <EditText
+            android:id="@+id/twoOperandET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8pt"
+            android:layout_weight="1"
+            tools:ignore="Autofill,LabelFor,TextFields" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonsOperations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8pt"
+        android:layout_marginRight="8pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oneAndTwoOperands"
+        app:layout_constraintVertical_bias="0.3">
+
+        <Button
+            android:id="@+id/sumBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sum"
+            android:textSize="26sp"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/difBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/dif"
+            android:textSize="26sp"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/multBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mult"
+            android:textSize="26sp"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/divBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/div"
+            android:textSize="26sp"
+            tools:ignore="ButtonStyle" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/transferDataBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/transferData"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonsOperations"
+        app:layout_constraintVertical_bias="0.3"
+        tools:ignore="ButtonStyle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

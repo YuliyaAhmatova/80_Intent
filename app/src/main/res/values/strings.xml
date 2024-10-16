@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">80_Intent</string>
+    <string name="calculate">Калькулятор</string>
+    <string name="sum">+</string>
+    <string name="div">/</string>
+    <string name="mult">*</string>
+    <string name="dif">-</string>
+    <string name="transferData">Передать данные</string>
+</resources>
